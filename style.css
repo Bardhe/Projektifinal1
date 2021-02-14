@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none | [ x | y | block | inline | both] [ mandatory | proximity]
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(Images/header-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 3%;
+    background-color: #f8f8f8;
+    font-family: 'Kaushan Script', cursive;
+    position: fixed;
+    z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EF7998;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.top-btn {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-p {
+    padding: 5px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+}
+
+.top-btn:hover {
+    background-color: #EF7998;
+    color: white;
+    border: 2px solid #EF7998;
+    transition: .3s;
+}
+
+.bujrum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #f8f8f8;
+}
+
+.pinkGuy {
+    color: #EF7998;
+    font-size: 60px;
+}
+
+.btn {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #EF7998;
+    transition: 0.5s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2% 0% 2%;
+    background-color: #f8f8f8;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#About {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.middle-part {
+    width: 25vw;
+}
+
+.macarons {
+    width: 30vw;
+    height: 45vh;
+    border: 5px solid #F9E494;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+#Store {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+    background-color: #f8f8f8;
+}
+
+.butonat-me-shije {
+    width: 35vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.items {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 30px;
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produkti {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.imazhi {
+    width: 27.5vw;
+}
+
+.item:hover {
+    background-color: black;
+    color: #EF7998;
+    transition: .3s;
+}
+
+.credits {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EF7998;
+    height: 100%;
+    padding: 100px;
+    font-size: 50px;
+}
+
+.none {
+    display: none;
+}
+/*Tablets and under*/
+@media (max-width:768px){
+
+
+    }
+
+/*Mobile*/
+@media (max-width:480px){
+    .nav{
+        flex-direction:column;
+    }
+
+    .nav ul li a{
+        padding:10px;
+        background-color:rgba(0, 0, 0, 0.1);
+    }
+    }
+
